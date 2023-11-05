@@ -1,17 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import { HashRouter as Router,Routes,Route } from 'react-router-dom';
 import BMKG from './pages/Short';
 
 
 function App() {
   return (
-    <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<BMKG/>}/>
-    </Routes>
-    
-    </BrowserRouter>
+    <Router>
+      <Routes>
+        <Route path='/' element={<BMKG/>}/>
+      </Routes>
+    </Router>
   );
 }
 
